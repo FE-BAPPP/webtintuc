@@ -8,7 +8,7 @@
 
 <main>
     <div class="container all_container">
-        <h2 class="title_head">All Categories</h2>
+        <h2 class="title_head">Tất cả danh mục</h2>
         <ul class="all_categories_menu">
             @foreach($categories as $category)
                 <li class="all_categories_item">

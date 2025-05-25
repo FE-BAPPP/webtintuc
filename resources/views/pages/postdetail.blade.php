@@ -17,11 +17,11 @@
 <div class="container header_container">
             <div class="pin">
                 <span class="pin_tag">{{$post->category->name}}</span>
-                <span class="pin_time">{{ $readingTime }} min read</span>
+                <span class="pin_time">{{ $readingTime }} phút đọc</span>
             </div>
             <div class="header_title">
                 <h1>{{$post->title}}</h1>
-                <span><img src="{{ $authorAvatar }}" alt="" class="profile_avatar">by {{$post->user->username}}</span></span>
+                <span><img src="{{ $authorAvatar }}" alt="" class="profile_avatar">viết bởi {{$post->user->username}}</span></span>
             </div>
         </div>
         <div class="container image_header">
@@ -69,7 +69,7 @@
 
                 <!-- Comment Section -->
                 <div class="comment_section" id="comments">
-                   <h2>Comments <span class="comment_count">{{ $post->comments->count() }}</span></h2>
+                   <h2>Bình luận <span class="comment_count">{{ $post->comments->count() }}</span></h2>
 
                     @if(Auth::check())
                         <form method="POST" action="{{ route('comments.store') }}">
@@ -83,7 +83,7 @@
                             </div>
                         </form>
                     @else
-                        <p style="margin-top: 20px; font-size: 18px;">You need <a href="{{ route('login') }}">Sign In</a> to Comment.</p>
+                        <p style="margin-top: 20px; font-size: 18px;">Bạn cần <a href="{{ route('login') }}">đăng nhập</a> để bình luận.</p>
                     @endif
                 
                     <div class="comments_display">
@@ -142,7 +142,7 @@
 
                     @if($post->comments->count() > 3)
                         <div class="show_more" id="showMoreBtn" style="cursor: pointer; margin-top: 20px; font-weight: bold;">
-                            Show more <i class="ri-arrow-down-line"></i>
+                            Xem thêm bình luận<i class="ri-arrow-down-line"></i>
                         </div>
                     @endif
 
@@ -155,7 +155,7 @@
 
             </div>
             <div class="right_col">
-                <h1>More from {{$post->category->name}}</h1>
+                <h1>Bài viết khác từ {{$post->category->name}}</h1>
                 @foreach($relatedPosts as $related)
                     <a href="{{ url('/posts/' . $related->id) }}" class="blog_card">
                         <img src="{{ asset('storage/' . $related->thumbnail) }}" alt="blog">
@@ -168,7 +168,7 @@
                         </div>
                     </a>
                 @endforeach
-                <a href="{{ route('category.posts', $post->category->id) }}" class="bt">See all {{ $post->category->name }} posts</a>
+                <a href="{{ route('category.posts', $post->category->id) }}" class="bt">Xem tất cả {{ $post->category->name }} bài viết</a>
             </div>
         </div>
 
@@ -213,8 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault(); // Ngăn form gửi ngay
 
                 Swal.fire({
-                    title: 'You want to delete this comment?',
-                    text: "You won't be able to revert this!",
+                    title: 'Bạn có muốn xóa bình luận này?',
+                    text: "Hành động này không thể hoàn tác!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#d33',

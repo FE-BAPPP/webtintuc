@@ -1,5 +1,5 @@
 <div class="container all_container" id="allposts">
-    <h2 class="title_head">All blog posts</h2>
+    <h2 class="title_head">Tất cả bài viết</h2>
     <div class="grid_posts">
         @foreach($posts as $post)
             <a href="{{ route('posts.show', $post->id) }}" class="grid_card">
