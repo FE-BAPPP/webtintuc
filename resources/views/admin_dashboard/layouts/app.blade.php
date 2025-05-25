@@ -122,7 +122,7 @@
             <div class="p-4 flex items-center justify-between">
                 <div class="flex items-center">
                     <i class="fas fa-layer-group text-indigo-400 text-xl mr-2"></i>
-                    <h1 class="text-xl font-bold">LehyUI Admin</h1>
+                    <h1 class="text-xl font-bold">BlogTFT</h1>
                 </div>
                 <button id="sidebar-toggle" class="lg:hidden text-gray-400 hover:text-white">
                     <i class="fas fa-times"></i>

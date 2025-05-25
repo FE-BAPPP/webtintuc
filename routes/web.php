@@ -95,7 +95,7 @@ Route::prefix('admin')
         Route::post('/update/{id}', [CategoryController::class, 'update'])->name('update');
         Route::delete('/delete/{id}', [CategoryController::class, 'destroy'])->name('destroy');
     });
-    // Các nhóm route khác như categories, users,... bạn khai báo tương tự
+    
     Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
     Route::delete('/comments/delete/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
