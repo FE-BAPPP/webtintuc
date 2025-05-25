@@ -53,7 +53,7 @@ class CommentController extends Controller
         $query->orderBy('created_at', $direction);
 
         // Phân trang
-        $comments = $query->paginate(10)
+        $comments = $query->paginate(5)
                           ->appends($request->only(['search','user_id','sort']));
 
         // Lấy danh sách user để hiển thị dropdown
