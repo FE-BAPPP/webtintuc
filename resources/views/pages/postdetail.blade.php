@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'All ' . $post->title . ' - LehyUI')
+@section('title', 'Tất cả ' . $post->title . ' - BlogTFT')
 
 @section('content')
 
@@ -25,7 +25,7 @@
         </div>
         <div class="container image_header">
             <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="{{ $post->title }}">
-            <p class="cr"><i class="ri-copyright-line"></i>20TH CENTURY FOX</p>
+            <p class="cr"><i class="ri-copyright-line"></i>ThinkView</p>
             <div class="header_content">
                 <h1>{{$post->title}}</h1>
                 <p>- {{$post->user->username}}</p>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="link_blog">
-                    <p>LehyUI<i class="ri-arrow-right-s-line"></i></p>
+                    <p>TFT<i class="ri-arrow-right-s-line"></i></p>
                     <p>Blog<i class="ri-arrow-right-s-line"></i></p>
                     <p>{{$post->category->name}}<i class="ri-arrow-right-s-line"></i></p>
                     <p class="current_blog">{{$post->title}}...</p>

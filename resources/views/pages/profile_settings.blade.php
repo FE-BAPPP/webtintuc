@@ -14,8 +14,6 @@
         <li class="profile_menu-item">Edit Profile</li>
         <li class="profile_menu-item">Password</li>
         <li class="profile_menu-item">Social Profiles</li>
-        <li class="profile_menu-item">Company</li>
-        <li class="profile_menu-item">Payouts</li>
       </ul>
     </div>
 

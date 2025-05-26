@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'All Categories - LehyUI')
+@section('title', 'Tất cả danh mục - BlogTFT')
 
 @section('content')
 

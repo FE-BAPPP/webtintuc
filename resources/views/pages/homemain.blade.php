@@ -1,6 +1,6 @@
     <div class="container header_container">
         <header>
-            <h1>Chia sẻ cảm hứng & câu chuyện nghề thực tế</h1>
+            <h1>Nắm bắt xu hướng công nghệ</h1>
             <p>Đăng ký để nhận thông tin về các bài viết mới nhất</p>
             <form action="">
                 <input type="email" placeholder="Nhập email của bạn" required>

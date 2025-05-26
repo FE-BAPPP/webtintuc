@@ -86,7 +86,7 @@ class CategoryController extends Controller
 
         return view('pages.allcategories', [
             'categories' => $categories,
-            'user' => $user,
+            'user' => $this->getProcessedUser(),
         ]);
     }
 
