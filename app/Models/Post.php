@@ -21,11 +21,12 @@ class Post extends Model
     {
         return $this->belongsTo(User::class);
     }
-
+    //mỗi bài viết thuộc về 1 danh mục, qua category_id
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
+    //1 bài viết có thể có nhiều comment
     public function comments() {
         return $this->hasMany(Comment::class);
     }

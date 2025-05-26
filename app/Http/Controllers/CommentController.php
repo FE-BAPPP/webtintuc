@@ -29,10 +29,7 @@ class CommentController extends Controller
 
     }
 
-    /**
-     * Hiển thị trang quản lý bình luận (admin).
-     * Hỗ trợ search, lọc, sort.
-     */
+    //Hiển thị trang quản lý bình luận (admin
     public function index(Request $request)
     {
         // Chuẩn bị query
