@@ -3,7 +3,7 @@
     <ul class="list-none p-0 m-0">
         <li>
             <a href="{{ route('admin.dashboard') }}" class="nav-link">
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home"></i> <!--icon lấy từ thư viên fontAwasome-->
                 <span>Dashboard</span>
             </a>
         </li>

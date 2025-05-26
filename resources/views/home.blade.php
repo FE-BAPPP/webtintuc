@@ -15,9 +15,6 @@
 
     @include('pages.homemain')
 
-
-
-
     
 </main>
 @include('components.footer')

@@ -3,7 +3,7 @@
 @section('page-title', 'Dashboard')
 
 @section("wrapper")
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl"> <!--style talwind css-->
     <div class="w-full max-w-6xl mx-auto">
         <!-- Stats Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -51,7 +51,7 @@
                         <h3 class="text-2xl font-bold mt-1">{{ $countComment }}</h3>
                     </div>
                     <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                        <i class="fas fa-user-shield text-purple-600 text-xl"></i>
+                        <i class="fas fa-comments text-purple-600 text-xl"></i>
                     </div>
                 </div>
                 <div class="mt-4 text-sm text-gray-600">
@@ -114,7 +114,7 @@
             </div>
         </div>
         
-        <!-- Recent Posts -->
+        <!-- bài viết gần đây -->
         <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
             <div class="flex items-center justify-between mb-6">
                 <h3 class="text-lg font-semibold">📝 Bài viết gần đây</h3>

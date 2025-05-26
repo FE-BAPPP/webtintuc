@@ -6,6 +6,7 @@
     <title>Admin - BlogTFT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--Thêm thư viện để lấy icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
@@ -117,7 +118,7 @@
 
 <body>
     <div class="wrapper flex">
-        <!-- Sidebar -->
+        <!-- menu bên trái -->
         <div class="sidebar" id="sidebar">
             <div class="p-4 flex items-center justify-between">
                 <div class="flex items-center">
@@ -133,7 +134,7 @@
             </div>
         </div>
 
-        <!-- Main Content -->
+        <!-- nội dung chính -->
         <div class="content-area w-full" id="content-area">
             <!-- Header -->
             <div class="header flex items-center justify-between px-4">
@@ -174,24 +175,24 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Sidebar toggle functionality
+        // xử lý toggle sidebar, active menu
         document.addEventListener('DOMContentLoaded', function() {
             const sidebar = document.getElementById('sidebar');
             const contentArea = document.getElementById('content-area');
             const sidebarToggle = document.getElementById('sidebar-toggle');
             const mobileToggle = document.getElementById('mobile-toggle');
             
-            // Mobile toggle
+            // bật sidebar trên mobile
             mobileToggle.addEventListener('click', function() {
                 sidebar.classList.toggle('mobile-open');
             });
             
-            // Sidebar close on mobile
+            // đóng sidebar trên mobile
             sidebarToggle.addEventListener('click', function() {
                 sidebar.classList.remove('mobile-open');
             });
             
-            // Set active nav link
+            // đánh dấu nav-link
             const currentPath = window.location.pathname;
             const navLinks = document.querySelectorAll('.nav-link');
             
