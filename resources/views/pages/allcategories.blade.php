@@ -3,7 +3,7 @@
 @section('title', 'All Categories - LehyUI')
 
 @section('content')
-@include('components.donate')
+
 @include('components.header')
 
 <main>
