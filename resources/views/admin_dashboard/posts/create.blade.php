@@ -148,9 +148,9 @@
         plugins: 'advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table help wordcount',
         toolbar: 'undo redo | blocks | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | preview code fullscreen',
         content_style: 'body { font-family:Roboto,sans-serif; font-size:16px }',
-        // Improve the UI
+        // cải thiện UIUI
         skin: 'oxide',
-        // Add custom styling
+        // Thêm style
         setup: function(editor) {
             editor.on('init', function() {
                 editor.getContainer().style.transition = "border-color 0.15s ease-in-out";

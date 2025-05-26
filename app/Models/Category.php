@@ -12,7 +12,7 @@ class Category extends Model
 
     protected $fillable = ['name'];
 
-    // Thêm quan hệ này để đếm số bài viết
+    // Thêm để đếm số bài viết
     public function posts()
     {
         return $this->hasMany(Post::class);
