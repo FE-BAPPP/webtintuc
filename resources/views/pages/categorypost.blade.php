@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'All ' . $category->name . ' posts - LehyUI')
+@section('title', 'Tất cả bài viết thuộc ' . $category->name . ' - BlogTFT')
 
 @section('content')
 
-@include('components.donate')
+
 @include('components.header')
 
 <main>
 
     <div class="container all_container">
-        <h2 class="title_head">All {{ $category->name }} posts</h2>
+        <h2 class="title_head">Tất cả bài viết thuộc {{ $category->name }}</h2>
 
         @if ($posts->isEmpty())
             <div class="no_posts">
-                <p>There are no posts in <strong>{{ $category->name }}</strong> .</p>
+                <p>Không có bài viết nào trong <strong>{{ $category->name }}</strong> .</p>
             </div>
         @else
             <div class="grid_posts">

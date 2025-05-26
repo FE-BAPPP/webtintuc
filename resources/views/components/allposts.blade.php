@@ -6,14 +6,14 @@
                 <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="{{ $post->title }}">
                 <div class="card_details">
                     <p class="author_time">
-                        {{ $post->user->username ?? 'Unknown' }} 
+                        {{ $post->user->username ?? 'Không rõ' }} 
                         <i class="ri-checkbox-blank-circle-fill"></i> 
                         {{ $post->created_at->format('d M Y') }}
                     </p>
                     <h2 class="title_card">{{ $post->title }} <i class="ri-arrow-right-up-line"></i></h2>
                     <p class="subtitle">{{ $post->sub_title }}</p>
                     <div class="tags">
-                        <span class="tag">{{ $post->category->name ?? 'Uncategorized' }}</span>
+                        <span class="tag">{{ $post->category->name ?? 'Chưa phân loại' }}</span>
                     </div>
                 </div>
             </a>

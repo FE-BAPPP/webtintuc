@@ -19,7 +19,7 @@
 
         @if (!Auth::check())
             <a href="{{ route('login') }}" class="btn">
-                <div class="btn_text">Get Started</div>
+                <div class="btn_text">Đăng nhập</div>
                 <div class="btn_shadow"></div>
             </a>
         @endif

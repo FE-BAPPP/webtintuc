@@ -3,7 +3,7 @@
     <div class="container2 footer_container">
         <div class="sign_up">
             <div class="content">
-                <h1>Đăng ký nhận bản tin</h1>
+                <h1>Đăng ký nhận bài viết</h1>
                 <p>Cập nhật những tin tức, thông báo và bài viết mới nhất từ chúng tôi.</p>
             </div>
             <form action="">
