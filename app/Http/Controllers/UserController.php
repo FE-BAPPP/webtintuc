@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Comment;
 
 class UserController extends Controller
 {
@@ -22,8 +23,12 @@ class UserController extends Controller
         : asset('storage/avatars/' . $user->avatar);
 
     $headerCategories = \App\Models\Category::orderBy('created_at')->limit(5)->get();
+    $comments = Comment::with('post')
+        ->where('user_id', $user->id)
+        ->orderBy('created_at', 'desc')
+        ->paginate(10);
 
-    return view('pages.profile_settings', compact('user', 'headerCategories'));
+    return view('pages.profile_settings', compact('user', 'headerCategories', 'comments'));
 }
 
 

@@ -16,11 +16,6 @@
         <li class="profile_menu-item">Social Profiles</li>
         <li class="profile_menu-item">Company</li>
         <li class="profile_menu-item">Payouts</li>
-        <li class="profile_menu-item">Email Notifications</li>
-        <li class="profile_menu-item">Billing</li>
-        <li class="profile_menu-item">Sessions</li>
-        <li class="profile_menu-item">Applications</li>
-        <li class="profile_menu-item">Data Export</li>
       </ul>
     </div>
 
