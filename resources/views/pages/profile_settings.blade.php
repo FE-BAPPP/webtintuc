@@ -4,7 +4,6 @@
 
 @section('content')
 
-@include('components.donate')
 @include('components.header')
 
 <main>

@@ -4,7 +4,6 @@
 
 @section('content')
 
-@include('components.donate')
 @include('components.header')
 @php
     $author = $post->user;
@@ -176,7 +175,43 @@
 @include('components.footer')
 
 <!-- Thêm đoạn này -->
+
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Toggle menu 3 chấm cho mỗi comment
+    document.querySelectorAll('.comment_menu_toggle').forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+            e.stopPropagation(); // Không cho nổi bọt sự kiện
+            // Đóng tất cả menu đang mở (nếu có)
+            document.querySelectorAll('.comment_menu').forEach(menu => {
+                menu.classList.add('hidden');
+            });
+
+            // Mở menu tương ứng
+            const menuId = this.dataset.id;
+            const menu = document.getElementById(menuId);
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        });
+    });
+
+    // Đóng menu nếu click ra ngoài
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.comment_menu').forEach(menu => {
+            menu.classList.add('hidden');
+        });
+    });
+    
+    // Ngăn click bên trong menu đóng menu
+    document.querySelectorAll('.comment_menu').forEach(menu => {
+        menu.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Bắt sự kiện nút Edit
     document.querySelectorAll('.btn_comment_edit').forEach(button => {

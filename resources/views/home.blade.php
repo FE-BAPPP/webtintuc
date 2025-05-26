@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'LehyUI Blog')
+@section('title', 'BlogTFT UI')
 
 @section('content')
 
-@include('components.donate')
 
 @include('components.header')
 
