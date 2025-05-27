@@ -106,7 +106,7 @@ body {
     gap: 4rem;
     list-style-type: none;
 }
-
+/* chạy viền ở categor */
 .nav_links .link {
     font-size: 1.6rem;
     font-weight: 600;
